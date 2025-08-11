@@ -32,8 +32,8 @@ MODEL_FILES = {
 # Hard-coded Google Drive links (add more when you have them)
 GDRIVE_URLS = {
     "hgb": "https://drive.google.com/file/d/17DP_Cd4v4MYqkU5sQPOTNqNSAo2riPdL/view?usp=sharing",
-    "rf":  None,   # add your RF link when ready
-    "seg": None,   # add your SEG link when ready
+    "rf":  "https://drive.google.com/file/d/1ICsgr0GNTDtLQ8JVAxjljsalAmI7qU4g/view?usp=sharing", 
+    "seg": "https://drive.google.com/file/d/1AqzUP7ND3cfLddi13QD7l3REgruKYo_u/view?usp=sharing", 
 }
 
 FEATURES = [
