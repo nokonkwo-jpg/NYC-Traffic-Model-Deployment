@@ -4,6 +4,13 @@ import numpy as np
 import pandas as pd
 import joblib
 import streamlit as st
+import sys
+import importlib
+
+try:
+    SegmentedModeling = importlib.import_module("SegmentedModeling")
+except ImportError as e:
+    raise
 
 st.set_page_config(page_title="Traffic Volume Predictor", page_icon="🚗", layout="centered")
 
