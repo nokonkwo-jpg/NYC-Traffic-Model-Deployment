@@ -33,7 +33,7 @@ MODEL_FILES = {
 GDRIVE_URLS = {
     "hgb": "https://drive.google.com/file/d/17DP_Cd4v4MYqkU5sQPOTNqNSAo2riPdL/view?usp=sharing",
     "rf":  "https://drive.google.com/file/d/1ICsgr0GNTDtLQ8JVAxjljsalAmI7qU4g/view?usp=sharing", 
-    "seg": "https://drive.google.com/file/d/1AqzUP7ND3cfLddi13QD7l3REgruKYo_u/view?usp=sharing", 
+    "seg": "https://drive.google.com/file/d/1AqzUP7ND3cfLddi13QD7l3REgruKYo_u/view?usp=drive_link", 
 }
 
 FEATURES = [
@@ -91,7 +91,7 @@ if st.button("🔁 Re-download models"):
                 pass
     # Clear the cache and re-run
     prepare_and_load_models.clear()
-    st.experimental_rerun()
+    st.rerun()
 
 # Model picker (only those we have files for)
 model_key = st.selectbox("Model", options=list(MODELS.keys()), format_func=lambda k: pretty.get(k, k))
